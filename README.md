@@ -1,6 +1,6 @@
 # PDF Merger
 
-A simple script to merge multiple PDF files into one PDF file.
+A simple program to merge multiple PDF files into one PDF file.
 
 Recently I had to merge multiple PDF files. I found a few online websites/tools that could do this, but I wanted to do it locally on my computer. So here is a simple script that does just that.
 
