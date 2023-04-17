@@ -59,7 +59,3 @@ python3 -m pip install pypdf
 ```
 
 ---
-
-## License
-
-[MIT](LICENSE)
