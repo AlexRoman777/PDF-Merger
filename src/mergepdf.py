@@ -1,9 +1,10 @@
-
-from pypdf import PdfWriter
 from tkinter import filedialog
 from tkinter import Tk
 import logging
 import os
+import subprocess
+from pypdf import PdfWriter
+
 
 merger = PdfWriter()
 root = Tk()
@@ -26,7 +27,7 @@ def get_input_files():
         return root.filename
 
 
-def get_output_file():  # TODO: Add a default file name and destination
+def get_output_file():
     '''Returns a file path'''
     root.withdraw()
     root.filename = filedialog.asksaveasfilename(
@@ -38,7 +39,7 @@ def merge_pdf():
     '''Merges PDF files and saves the output file'''
     files = get_input_files()
     if files is None:
-        logging.info(f'No files selected')
+        logging.info('No files selected')
         raise SystemExit(1)
     else:
         for pdf in files:
@@ -54,10 +55,10 @@ def merge_pdf():
 
 def clear_terminal():
     '''Clears the terminal for a cleaner look :) '''
-    os.system('cls' if os.name == 'nt' else 'clear')
+    subprocess.call('cls' if os.name == 'nt' else 'clear', shell=True)
 
 
-def main():  # TODO: Add parameters for input and output files. so the script can be run from the command line
+def main():
     clear_terminal()
     merge_pdf()
 
