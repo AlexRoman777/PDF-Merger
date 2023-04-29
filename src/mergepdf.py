@@ -1,7 +1,6 @@
 from tkinter import filedialog
 from tkinter import Tk
 import logging
-import subprocess
 from pypdf import PdfWriter
 
 
@@ -52,13 +51,7 @@ def merge_pdf():
         root.destroy()
 
 
-def clear_terminal():
-    '''Clears the terminal for a cleaner look :) '''
-    subprocess.call('clear', shell=True)
-
-
 def main():
-    clear_terminal()
     merge_pdf()
 
 
