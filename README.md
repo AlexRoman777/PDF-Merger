@@ -1,5 +1,10 @@
 # PDF Merger
 
+[![CodeFactor](https://www.codefactor.io/repository/github/alexroman777/pdf-merger/badge/main)](https://www.codefactor.io/repository/github/alexroman777/pdf-merger/overview/main)
+[![CodeQL](https://github.com/AlexRoman777/PDF-Merger/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/AlexRoman777/PDF-Merger/actions/workflows/github-code-scanning/codeql)
+
+---
+
 A simple program to merge multiple PDF files into one PDF file.
 
 Recently I had to merge multiple PDF files. I found a few online websites/tools that could do this, but I wanted to do it locally on my computer. So here is a simple script that does just that.
@@ -43,19 +48,7 @@ pip install -r requirements.txt
 ```
 
 ```bash
-python3 src/mergepdf.py
-```
-
-But if don't want to use the virtual environment, you can just install the PyPDF library using pip.
-
-```bash
-pip install pypdf
-```
-
-or
-
-```bash
-python3 -m pip install pypdf
+python3 src/main.py
 ```
 
 ---
