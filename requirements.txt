@@ -1,8 +1,11 @@
 pypdf
+PyPDF2
 flake8
 autopep8
 tox
 coverage
 pytest
+
+reportlab
 
 
