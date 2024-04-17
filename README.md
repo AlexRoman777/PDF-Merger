@@ -1,6 +1,5 @@
 # PDF Merger
 
-[![CodeFactor](https://www.codefactor.io/repository/github/alexroman777/pdf-merger/badge/main)](https://www.codefactor.io/repository/github/alexroman777/pdf-merger/overview/main)
 [![CodeQL](https://github.com/AlexRoman777/PDF-Merger/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/AlexRoman777/PDF-Merger/actions/workflows/github-code-scanning/codeql)
 
 ---
